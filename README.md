@@ -10,7 +10,7 @@ npm install connect-mock-request
 
 ## How to use ?
 
-````
+````javascript
 var request = require('connect-mock-request'),
     connect = require('connect'),
     app = connect()
@@ -31,7 +31,7 @@ request(app)
 
 Execute a request using a method and a path.
 
-````
+````javascript
 request(app)
 .request('post', '/')
 ...
@@ -48,7 +48,7 @@ All of these methods are avalaible via alias :
 * DELETE
 * HEAD
 
-````
+````javascript
 request(app)
 .patch('/')
 ...
@@ -58,7 +58,7 @@ request(app)
 
 Set a header.
 
-````
+````javascript
 request(app)
 .set('Content-Type', 'application/json')
 ...
@@ -68,7 +68,7 @@ request(app)
 
 Write body data.
 
-````
+````javascript
 request(app)
 .write('{"user": "greg"}')
 ...
@@ -80,7 +80,7 @@ End the request.
 
 Callback takes a single `response` argument which contains all response attributes and a `body` attribute.
 
-````
+````javascript
 request(app)
 .get('/')
 .end(function (res) {
