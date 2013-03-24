@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/neoziro/connect-mock-request.png?branch=master)](https://travis-ci.org/neoziro/connect-mock-request)
+
 # Connect mock request
 
 Add a request method to connect app useful for testing app.
